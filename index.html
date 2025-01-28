@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <main>
+        <!-- Add Book Section -->
+        <section id="add-book">
+            <h2>Add a New Book</h2>
+            <form id="book-form">
+                <input type="text" id="book-title" placeholder="Book Title" required>
+                <input type="text" id="book-author" placeholder="Author" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Library Collection Section -->
+        <section id="book-list">
+            <h2>Library Collection</h2>
+            <ul id="books">
+                <!-- Dynamic list of books -->
+            </ul>
+        </section>
+
+        <!-- Issued Books Section -->
+        <section id="issued-books-section">
+            <h2>Issued Books</h2>
+            <ul id="issued-books">
+                <!-- Dynamic list of issued books -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Library Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
