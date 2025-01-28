@@ -12,29 +12,34 @@
     </header>
 
     <main>
-        <!-- Add Book Section -->
-        <section id="add-book">
-            <h2>Add a New Book</h2>
-            <form id="book-form">
-                <input type="text" id="book-title" placeholder="Book Title" required>
-                <input type="text" id="book-author" placeholder="Author" required>
-                <button type="submit">Add Book</button>
-            </form>
-        </section>
-
         <!-- Library Collection Section -->
         <section id="book-list">
             <h2>Library Collection</h2>
             <ul id="books">
-                <!-- Dynamic list of books -->
+                <!-- Hardcoded Book List -->
+                <li>
+                    <span>Book Title 1 by Author 1</span>
+                    <a href="issue-book.html?book=Book+Title+1" class="issue-button">Issue</a>
+                    <a href="remove-book.html?book=Book+Title+1" class="remove-button">Remove</a>
+                </li>
+                <li>
+                    <span>Book Title 2 by Author 2</span>
+                    <a href="issue-book.html?book=Book+Title+2" class="issue-button">Issue</a>
+                    <a href="remove-book.html?book=Book+Title+2" class="remove-button">Remove</a>
+                </li>
             </ul>
+            <a href="add-book.html" class="add-book-button">Add New Book</a>
         </section>
 
         <!-- Issued Books Section -->
         <section id="issued-books-section">
             <h2>Issued Books</h2>
             <ul id="issued-books">
-                <!-- Dynamic list of issued books -->
+                <!-- Hardcoded Issued Books List -->
+                <li>
+                    <span>Book Title 1 by Author 1 (Issued to: John Doe)</span>
+                    <a href="return-book.html?book=Book+Title+1" class="return-button">Return</a>
+                </li>
             </ul>
         </section>
     </main>
@@ -42,7 +47,5 @@
     <footer>
         <p>&copy; 2025 Library Management System</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
